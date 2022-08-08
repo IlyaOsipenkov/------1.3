@@ -1,0 +1,144 @@
+@font-face {
+    font-family: "TT Lakes";
+    src: url(../fonts/TTLakes-Regular);
+}
+
+* {
+    font-family: "TT Lakes";
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F8F8F8;
+}
+
+.dividerFirst {
+    //     @media screen and (min-width: 768px) and (max-width: 1119px) {
+    //         display: block;
+    //     }
+    display: none;
+}
+
+// .dividerSecond {
+//     @media screen and (min-width: 768px) and (max-width: 1119px) {
+//         display: none;
+//     }
+// display: none;
+// }
+
+
+.header {
+    width: 100vw;
+    height: 88px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+
+
+    &__button {}
+
+    &__text {}
+
+    &__icon {}
+
+    &__divider {
+        width: 2px;
+        height: 32px;
+
+        background: #EAEAEA;
+        border-radius: 1px;
+    }
+
+    &__logo {}
+}
+
+.main {
+    background-color: #F8F8F8;
+    position: relative;
+    width: 100vw;
+    height: 509px;
+
+    &__holder {
+        display: flex;
+        padding-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    &__scroll-menu {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 16px;
+
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    &__element {
+        padding: 8px 16px;
+    }
+
+    &__element--focused {
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+    }
+
+    &__text {
+        margin: 5% 5%;
+    }
+
+    &__content {
+        font-size: 14px;
+    }
+
+    &__uncover {
+        display: flex;
+    }
+
+    &__arrows {
+        margin-left: 24px;
+    }
+
+    &__uncover-text {
+        margin-left: 16px;
+    }
+
+    &__image {}
+
+    &__image-content {
+        padding: 27px 0;
+        width: 100%;
+
+        //           Вложенные(нет)
+
+        &__divider-of-header {
+
+            width: 4px;
+            height: 40px;
+
+            background-color: #41F6D7;
+            transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+
+        &__header {
+            padding-left: 12px;
+        }
+
+        &__element {
+            padding: 8px 16px;
+            margin-right: 5px;
+        }
+
+        &__element--focused {
+            padding: 8px 16px;
+            margin-right: 5px;
+            background: #FFFFFF;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+            // transform: matrix(-1, 0, 0, 1, 0, 0);
+        }
+    }
+}
