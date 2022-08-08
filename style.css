@@ -70,25 +70,26 @@ body {
 }
 .main__uncover-text {
   margin-left: 16px;
+  font-weight: 500;
 }
 .main__image-content {
   padding: 27px 0;
   width: 100%;
 }
-.main__image-content__divider-of-header {
+.main__divider-of-header {
   width: 4px;
   height: 40px;
   background-color: #41F6D7;
   transform: matrix(-1, 0, 0, 1, 0, 0);
 }
-.main__image-content__header {
+.main__header {
   padding-left: 12px;
 }
-.main__image-content__element {
+.main__element {
   padding: 8px 16px;
   margin-right: 5px;
 }
-.main__image-content__element--focused {
+.main__element--focused {
   padding: 8px 16px;
   margin-right: 5px;
   background: #FFFFFF;

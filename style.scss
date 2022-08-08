@@ -104,6 +104,7 @@ body {
 
     &__uncover-text {
         margin-left: 16px;
+        font-weight: 500;
     }
 
     &__image {}
@@ -111,34 +112,34 @@ body {
     &__image-content {
         padding: 27px 0;
         width: 100%;
+    }
 
-        //           Вложенные(нет)
+    //           Вложенные(нет)
 
-        &__divider-of-header {
+    &__divider-of-header {
 
-            width: 4px;
-            height: 40px;
+        width: 4px;
+        height: 40px;
 
-            background-color: #41F6D7;
-            transform: matrix(-1, 0, 0, 1, 0, 0);
-        }
+        background-color: #41F6D7;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
 
-        &__header {
-            padding-left: 12px;
-        }
+    &__header {
+        padding-left: 12px;
+    }
 
-        &__element {
-            padding: 8px 16px;
-            margin-right: 5px;
-        }
+    &__element {
+        padding: 8px 16px;
+        margin-right: 5px;
+    }
 
-        &__element--focused {
-            padding: 8px 16px;
-            margin-right: 5px;
-            background: #FFFFFF;
-            border: 2px solid #B8FFEC;
-            border-radius: 6px;
-            // transform: matrix(-1, 0, 0, 1, 0, 0);
-        }
+    &__element--focused {
+        padding: 8px 16px;
+        margin-right: 5px;
+        background: #FFFFFF;
+        border: 2px solid #B8FFEC;
+        border-radius: 6px;
+        // transform: matrix(-1, 0, 0, 1, 0, 0);
     }
 }
