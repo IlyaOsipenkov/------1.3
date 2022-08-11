@@ -40,6 +40,10 @@ body {
 
     &__button {}
 
+    &__button--hidden {
+        display: none;
+    }
+
     &__text {}
 
     &__icon {}
@@ -70,7 +74,7 @@ body {
     &__scroll-menu {
         display: flex;
         justify-content: space-between;
-        margin-left: 16px;
+        margin-left: 4%;
 
         white-space: nowrap;
         overflow-x: auto;
@@ -78,6 +82,7 @@ body {
 
     &__element {
         padding: 8px 16px;
+        color: #7E7E82;
     }
 
     &__element--focused {
@@ -87,30 +92,35 @@ body {
     }
 
     &__text {
-        margin: 5% 5%;
+        margin: 5% 5% 0 5%;
     }
 
     &__content {
         font-size: 14px;
+        overflow: hidden;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
     }
 
     &__uncover {
         display: flex;
+        margin-top: 30px;
     }
 
-    &__arrows {
-        margin-left: 24px;
-    }
+    &__arrows {}
 
     &__uncover-text {
         margin-left: 16px;
         font-weight: 500;
     }
 
-    &__image {}
+    &__image {
+        padding: 27px 0;
+    }
 
     &__image-content {
-        padding: 27px 0;
+
         width: 100%;
     }
 
@@ -126,7 +136,7 @@ body {
     }
 
     &__header {
-        padding-left: 12px;
+        padding-left: 4%;
     }
 
     &__element {
@@ -141,5 +151,145 @@ body {
         border: 2px solid #B8FFEC;
         border-radius: 6px;
         // transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+}
+
+.main-buttons {
+    display: none;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+    .header {
+
+        justify-content: flex-start;
+
+        &__button--hidden {
+            display: block;
+        }
+
+        &__button {
+            margin-left: 3%;
+        }
+
+        &__divider {
+            margin-left: 2%;
+        }
+
+        &__logo {
+            margin-left: 2%;
+        }
+    }
+
+    .header :nth-child(4) {
+        margin-left: clamp(250px, 32%, 500px);
+    }
+
+    .dividerFirst {
+        display: block;
+    }
+
+
+    .main {
+        &__box {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__text {
+            width: 42vw;
+        }
+
+        &__uncover {}
+
+        &__image {}
+
+        &__content {
+            -webkit-line-clamp: 7;
+        }
+
+        &__image-content {
+            width: 45vw;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 1120px) {
+    .header {
+        display: none;
+    }
+
+    .main {
+
+        &__holder {}
+
+        &__scroll-menu {
+            flex-wrap: wrap;
+            margin-right: 4%;
+            white-space: wrap;
+            // height: 100px;
+            // overflow-x: hidden;
+            // margin-bottom: 1vh;
+        }
+
+        &__box {
+            display: flex;
+            flex-direction: row;
+        }
+
+        &__text {
+            width: 42vw;
+        }
+
+        &__uncover {}
+
+        &__image {}
+
+        &__content {
+            -webkit-line-clamp: 7;
+        }
+
+        &__image-content {
+            width: 45vw;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+    }
+
+    .main-buttons {
+        width: 72vw;
+        display: flex;
+        justify-content: flex-end;
+
+
+
+        &__button {
+            display: flex;
+            align-items: center;
+        }
+
+        &__text {
+            margin-right: 1vw;
+
+
+            font-weight: 600;
+        }
+
+        &__icon {
+            margin-right: 3vw;
+            margin-top: 5px;
+        }
+    }
+
+    .main__scroll-menu :last-child {
+        // border: 3px solid red;
     }
 }
