@@ -22,10 +22,7 @@ body {
     background-color: #F8F8F8;
 }
 
-h1 {
-    font-family: "TTLakes-DemiBold";
-    font-weight: bold;
-}
+
 
 .dividerFirst {
 
@@ -143,6 +140,8 @@ h1 {
 
     &__header {
         padding-left: 4%;
+        font-family: "TTLakes-DemiBold";
+        font-weight: bold;
     }
 
     &__element {

@@ -16,11 +16,6 @@ body {
   background-color: #F8F8F8;
 }
 
-h1 {
-  font-family: "TTLakes-DemiBold";
-  font-weight: bold;
-}
-
 .dividerFirst {
   display: none;
 }
@@ -101,6 +96,8 @@ h1 {
 }
 .main__header {
   padding-left: 4%;
+  font-family: "TTLakes-DemiBold";
+  font-weight: bold;
 }
 .main__element {
   padding: 8px 16px;
