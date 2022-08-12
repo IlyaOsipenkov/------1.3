@@ -6,6 +6,10 @@
   font-family: "TTLakes-DemiBold";
   src: url(./fonts/TTLakes-DemiBold.woff) format("woff");
 }
+@font-face {
+  font-family: "TTLakes-ExtraBold";
+  src: url(./fonts/TTLakes-ExtraBold.woff) format("woff");
+}
 * {
   font-family: "TT Lakes Regular";
   margin: 0;
@@ -96,7 +100,7 @@ body {
 }
 .main__header {
   padding-left: 4%;
-  font-family: "TTLakes-DemiBold";
+  font-family: "TTLakes-ExtraBold";
   font-weight: bold;
 }
 .main__element {
