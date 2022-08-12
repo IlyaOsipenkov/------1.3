@@ -1,6 +1,6 @@
 @font-face {
     font-family: "TT Lakes";
-    src: url(./fonts/TTLakes-Regular) format('ttf');
+    src: url(./fonts/TTLakes-Regular) format('woff');
 }
 
 * {
@@ -14,18 +14,10 @@ body {
 }
 
 .dividerFirst {
-    //     @media screen and (min-width: 768px) and (max-width: 1119px) {
-    //         display: block;
-    //     }
+
     display: none;
 }
 
-// .dividerSecond {
-//     @media screen and (min-width: 768px) and (max-width: 1119px) {
-//         display: none;
-//     }
-// display: none;
-// }
 
 
 .header {
