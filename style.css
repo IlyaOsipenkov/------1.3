@@ -1,7 +1,10 @@
 @font-face {
   font-family: "TT Lakes Regular";
   src: url(./fonts/TTLakes-Regular.woff) format("woff");
-  src: url(./fonts/TTLakes-Regular.toff) format("truetype");
+}
+@font-face {
+  font-family: "TTLakes-DemiBold";
+  src: url(./fonts/TTLakes-DemiBold.woff) format("woff");
 }
 * {
   font-family: "TT Lakes Regular";
@@ -11,6 +14,11 @@
 
 body {
   background-color: #F8F8F8;
+}
+
+h1 {
+  font-family: "TTLakes-DemiBold";
+  font-weight: bold;
 }
 
 .dividerFirst {
