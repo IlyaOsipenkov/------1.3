@@ -32,6 +32,9 @@ body {
   justify-content: space-around;
   background-color: #FFFFFF;
 }
+.header__button {
+  cursor: pointer;
+}
 .header__button--hidden {
   display: none;
 }
@@ -62,6 +65,7 @@ body {
 .main__element {
   padding: 8px 16px;
   color: #7E7E82;
+  cursor: pointer;
 }
 .main__element--focused {
   background: #FFFFFF;
@@ -85,6 +89,7 @@ body {
 .main__uncover-text {
   margin-left: 16px;
   font-weight: 600;
+  cursor: pointer;
 }
 .main__image {
   padding: 27px 0;
@@ -181,13 +186,14 @@ body {
     overflow: hidden;
   }
   .main-buttons {
-    width: 70vw;
+    width: 68vw;
     display: flex;
     justify-content: flex-end;
   }
   .main-buttons__button {
     display: flex;
     align-items: center;
+    cursor: pointer;
   }
   .main-buttons__text {
     margin-right: 1vw;
