@@ -84,7 +84,7 @@ body {
 }
 .main__uncover-text {
   margin-left: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 .main__image {
   padding: 27px 0;
@@ -101,7 +101,6 @@ body {
 .main__header {
   padding-left: 4%;
   font-family: "TTLakes-ExtraBold";
-  font-weight: bold;
 }
 .main__element {
   padding: 8px 16px;
