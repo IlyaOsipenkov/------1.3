@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>
+        layout1.3
+    </title>
 </head>
 
 <body>
@@ -139,7 +141,7 @@
             <div class="main__divider-of-header"></div>
             <h1 class="main__header">Уcлуги и сервисы</h1>
             <div class="main-buttons">
-                <div class="main-buttons__button">
+                <button class="main-buttons__button">
                     <div class="main-buttons__text">
                         <p>Оставить заявку</p>
                     </div>
@@ -158,8 +160,8 @@
                         </svg>
 
                     </div>
-                </div>
-                <div class="main-buttons__button">
+                </button>
+                <button class="main-buttons__button">
                     <div class="main-buttons__text">
                         <p>Статус ремонта</p>
                     </div>
@@ -172,44 +174,54 @@
                         </svg>
 
                     </div>
-                </div>
+                </button>
             </div>
         </div>
-        <nav class="main__scroll-menu">
-            <div class="main__element main__element--focused">Ремонтируем бренды</div>
-            <div class="main__element ">Ремонтируем устройства</div>
-            <div class="main__element ">Цены на услуги</div>
-            <div class="main__element ">Адреса сервесных центров</div>
-            <div class="main__element ">Специальные цены</div>
-            <div class="main__element ">Отзывы</div>
+        <nav class="main__scroll-list scroll-list">
+            <ul class="main__scroll-menu scroll-menu">
+                <li class="main__element main__element--focused"><button class="main__element-button">Ремонтируемые
+                        устройства</button></li>
+                <li class="main__element "><button class="main__element-button">Цены на услуги</button></li>
+                <li class="main__element "><button class="main__element-button">Адреса сервесных центров</button></li>
+                <li class="main__element "><button class="main__element-button">Специальные цены</button></li>
+                <li class="main__element "><button class="main__element-button">Отзывы</button></li>
+                <li class="main__element "><button class="main__element-button">Ремонтируемые бренды</button></li>
+            </ul>
         </nav>
         <section class="main__box">
             <!--Переименовать -->
-            <div class="main__text">
-                <p class="main__content">
-                    Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
-                    отремонтировать свой ноутбук Dell с официальной гарантией производителя.
-                    <br><br>
-                    Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое
-                    количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                    очередь, советуют нас родным и близким.
-                </p>
+            <article class="main__text">
+                <section>
+                    <p class="main__content">
+                        Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете
+                        отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+                        <br><br>
+                        Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает
+                        большое
+                        количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                        очередь, советуют нас родным и близким.
+                    </p>
+                </section>
                 <div class="main__uncover">
-                    <div class="main__arrows">
-                        <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z"
-                                fill="#41F6D7" />
-                        </svg>
+                    <button class="main__uncover">
+                        <div class="main__arrows">
+                            <svg width="8" height="11" viewBox="0 0 8 11" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6.50008 0.500076L4.00008 3.00008L1.50008 0.500076C1.22393 0.223933 0.776218 0.223933 0.500076 0.500076C0.223933 0.776218 0.223933 1.22393 0.500075 1.50008L3.29297 4.29297C3.68349 4.68349 4.31666 4.68349 4.70718 4.29297L7.50008 1.50008C7.77622 1.22393 7.77622 0.776218 7.50008 0.500076C7.22393 0.223933 6.77622 0.223933 6.50008 0.500076ZM6.50008 6.50008L4.00008 9.00008L1.50008 6.50008C1.22393 6.22393 0.776218 6.22393 0.500076 6.50008C0.223933 6.77622 0.223933 7.22393 0.500075 7.50008L3.29297 10.293C3.68349 10.6835 4.31666 10.6835 4.70718 10.293L7.50008 7.50008C7.77622 7.22393 7.77622 6.77622 7.50008 6.50008C7.22393 6.22393 6.77622 6.22393 6.50008 6.50008Z"
+                                    fill="#41F6D7" />
+                            </svg>
 
-                    </div>
-                    <div class="main__uncover-text">Читать далее</div>
+                        </div>
+
+                        <div class="main__uncover-text">Читать далее</div>
+                    </button>
                 </div>
 
-            </div>
+            </article>
 
             <div class="main__image">
-                <img class="main__image-content" src="./images/MG3223.jpg" alt="Картинка">
+                <img class="main__image-content" src="./images/MG3223.jpg" alt="Логотип компании">
             </div>
 
         </section>

@@ -87,18 +87,32 @@ body {
 
         white-space: nowrap;
         overflow-x: auto;
+        list-style-type: none;
+
+
     }
 
     &__element {
         padding: 8px 16px;
         color: #7E7E82;
         cursor: pointer;
+        font-size: 16px;
     }
 
-    &__element--focused {
-        background: #FFFFFF;
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
+    &__element-button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        padding: 8px 2vw;
+        margin-right: 5px;
+        box-sizing: border-box;
+        border: 2px solid transparent;
+
+        &:focus {
+            background: #FFFFFF;
+            border: 2px solid #B8FFEC;
+            border-radius: 6px;
+        }
     }
 
     &__text {
@@ -116,13 +130,24 @@ body {
     &__uncover {
         display: flex;
         margin-top: 30px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        user-select: none;
+
+        &:focus {
+            background: linear-gradient(to right, #ececec 50%, #F8F8F8 90%);
+        }
     }
 
-    &__arrows {}
+    &__arrows {
+        user-select: none;
+    }
 
     &__uncover-text {
         margin-left: 16px;
         font-weight: 600;
+        user-select: none;
         cursor: pointer;
     }
 
@@ -156,21 +181,34 @@ body {
         margin-right: 5px;
     }
 
-    &__element--focused {
-        padding: 8px 16px;
-        margin-right: 5px;
-        background: #FFFFFF;
-        border: 2px solid #B8FFEC;
-        border-radius: 6px;
-        // transform: matrix(-1, 0, 0, 1, 0, 0);
-    }
+    &__element--focused {}
 }
 
 .main-buttons {
     display: none;
+
+    &__button {
+        border: none;
+        outline: none;
+        background-color: transparent;
+
+        &:focus {
+            background: linear-gradient(to right, #ececec 50%, #F8F8F8 90%);
+        }
+    }
+
+    &__icon {}
+
+    // .main-buttons__button:focus {
+    //     outline: 1px solid black;
+    // }
+
 }
 
-
+.scroll-menu::-webkit-scrollbar {
+    width: 0px;
+    background: rgba(255, 255, 255, 0.0);
+}
 
 
 
@@ -242,13 +280,25 @@ body {
 
         &__holder {}
 
+        &__header {
+            padding-left: 2.8vw;
+        }
+
         &__scroll-menu {
             flex-wrap: wrap;
-            margin-right: 4%;
+            margin-left: 3%;
+            margin-right: 3%;
+            justify-content: flex-start;
+
+
             white-space: wrap;
             // height: 100px;
             // overflow-x: hidden;
             // margin-bottom: 1vh;
+        }
+
+        &__element {
+            padding: 8px 0;
         }
 
         &__box {
@@ -258,14 +308,21 @@ body {
 
         &__text {
             width: 42vw;
+            margin: 5vh 5vw 0 3vw;
         }
 
-        &__uncover {}
+        &__uncover {
+            padding-left: 13px;
+        }
 
-        &__image {}
+        &__image {
+            padding-left: 1vw;
+        }
 
         &__content {
-            -webkit-line-clamp: 7;
+            -webkit-line-clamp: 8;
+            line-height: 20px;
+            font-size: 14px;
         }
 
         &__image-content {
@@ -274,12 +331,16 @@ body {
             overflow: hidden;
         }
 
+
     }
 
     .main-buttons {
-        width: 68vw;
+        position: absolute;
+        right: 4vw;
         display: flex;
         justify-content: flex-end;
+        gap: 2vw;
+
 
 
 
@@ -293,11 +354,12 @@ body {
             margin-right: 1vw;
 
 
-            font-weight: 500;
+
+            font-weight: 600;
         }
 
         &__icon {
-            margin-right: 3vw;
+            // margin-right: 3vw;
             margin-top: 5px;
         }
     }
