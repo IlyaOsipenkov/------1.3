@@ -77,6 +77,7 @@ body {
   margin-right: 5px;
   box-sizing: border-box;
   border: 2px solid transparent;
+  cursor: pointer;
 }
 .main__element-button:focus {
   background: #FFFFFF;
